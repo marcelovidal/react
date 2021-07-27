@@ -17,8 +17,6 @@ export default function App() {
   if (selectedTheme === "themenegro") {
     className = "negro";
   }
-
-
   return (
     <span className={className}>
     <div className="row justify-content-md-center contenedor">
@@ -34,7 +32,7 @@ export default function App() {
             }
           }}
           type="button"
-          class="btn btn-primary"
+          className="btn btn-primary"
         >
           cambiar
         </button>

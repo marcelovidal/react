@@ -1,4 +1,6 @@
-import ListaDeLinks from "./ListaDeLinks";
+import ListaDeLinksComics from "./ListaDeLinksComics";
+import ListaDeLinksStories from "./ListaDeLinksStories";
+import ListaDeLinksSeries from "./ListaDeLinksSeries";
 
 function DetalleDeHeroe(props) {
   console.log(props);
@@ -15,7 +17,15 @@ function DetalleDeHeroe(props) {
         </h5>
       </div>
       {props.heroe.comics.items.length > 0 && (
-          <ListaDeLinks lista={props.heroe.comics.items} />
+          <ListaDeLinksComics lista={props.heroe.comics.items} />
+  
+      )}  
+      {props.heroe.stories.items.length > 0 && (
+          <ListaDeLinksStories lista={props.heroe.stories.items} />
+  
+      )}  
+      {props.heroe.series.items.length > 0 && (
+          <ListaDeLinksSeries lista={props.heroe.series.items} />
   
       )}  
   </div>

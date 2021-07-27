@@ -1,5 +1,4 @@
-
-function ListaDeLinks(props) {
+function ListaDeLinksSeries(props) {
   console.log(props)
   
 
@@ -7,22 +6,22 @@ function ListaDeLinks(props) {
       props.lista.length > 0 && (
         <>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
+          <h2 className="accordion-header" id="headingTres">
               <button
                 className="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseTres"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseTres"
               >
-                Comics
+                Series
               </button>
             </h2>
           <div
-              id="collapseOne"
-              className="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
+              id="collapseTres"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingTres"
               data-bs-parent="#accordionExample"
         >
             <div className="accordion-body">
@@ -44,5 +43,5 @@ function ListaDeLinks(props) {
     );
   }
   
-  export default ListaDeLinks;
+  export default ListaDeLinksSeries;
   

@@ -1,5 +1,5 @@
 
-function ListaDeLinks(props) {
+function ListaDeLinksComics(props) {
   console.log(props)
   
 
@@ -44,5 +44,5 @@ function ListaDeLinks(props) {
     );
   }
   
-  export default ListaDeLinks;
+  export default ListaDeLinksComics;
   

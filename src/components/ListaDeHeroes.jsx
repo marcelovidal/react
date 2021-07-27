@@ -22,7 +22,7 @@ function ListaHeroes(props) {
                       console.log("click " + elemento.name);
                       props.setSelectedHero(i);
                     }}
-                    href={elemento.resourceURI}
+                    href="#"
                   >
                     {elemento.name}
                   </a>
